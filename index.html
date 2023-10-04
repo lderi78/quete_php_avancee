@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <form action="/result.php" method="post" class="container bg-light border rounded p-5">
+        <h1 class="text-center">Votre commande</h1>
+
+        <p class="row">
+            <label for="fprenom" class="form-label">Prenom : </label>
+            <input type="text" name="prenom"  class="form-control">
+        </p>
+
+        <p class="row">
+            <label for="fnom" class="form-label">Nom : </label>
+            <input type="text" name="nom"  class="form-control">
+        </p>
+
+        <p class="row">
+            <label for="femail" class="form-label">Email : </label>
+            <input type="email" name="email"  class="form-control">
+        </p>
+
+        <p class="row">
+            <label for="ftelephone" class="form-label">Telephone : </label>
+            <input type="text" name="telephone"  class="form-control">
+        </p>
+
+        <p class="row">
+            <label for="fsujet" class="form-label">Choisis un sujet: </label>
+            
+            <select id="cars" name="sujet" class="form-control">
+                <option value="Commande non reçue">Commande non reçue</option>
+                <option value="Commande erronée">Commande erronée</option>
+              </select>
+
+        </p>
+
+        <p class="row">
+            <label for="fmessage" class="form-label">Message : </label>
+            <textarea rows="10" cols="30" name="message"  class="form-control" ></textarea>
+        </p>
+
+        <p class="text-center">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </p>
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
